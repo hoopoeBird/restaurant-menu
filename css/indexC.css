@@ -1,0 +1,226 @@
+/* font-family: 'Caesar Dressing', cursive;
+font-family: 'Dongle', sans-serif;
+font-family: 'Metal Mania', cursive;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif; */
+:root {
+    --red: #e8272e;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    margin: 20px 160px;
+    display: flex;
+}
+.foods {
+    margin-right: 50px;
+}
+.foods > div {
+    display: flex;
+    background-color: #eee;
+    border-radius: 10px;
+    width: 600px;
+    height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 4px 8px 12px -10px;
+}
+.foods > div img {
+    min-width: 180px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.foods > div > div {
+    display: block;
+    padding: 0 20px;
+}
+.foods > div h3 {
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.foods > div > div > div{
+    display: inline;
+}
+.foods > div > div > div:first-of-type::after {
+    content: "";
+    height: 16px;
+    border-right: 2px solid #858282;
+    margin-left: 5px;
+}
+.foods > div > div > div:first-of-type {
+    margin-right: 10px;
+}
+.foods > div > div > div i {
+    color: var(--red);
+}
+.foods > div > div > div span {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.foods > div > div p {
+    text-transform: capitalize;
+    color: #858282;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.foods > div > div button {
+    border: 0;
+    color: var(--red);
+    text-transform: capitalize;
+    padding: 0;
+    cursor: pointer;
+}
+.sidebar h3 {
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.search {
+    border: 2px solid #bbb4b4;
+    border-radius: 20px;
+    width: 300px;
+}
+.search input {
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px;
+    width: 250px;
+}
+.search i {
+    font-size: 14px;
+}
+.categories {
+    width: 300px;
+}
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0;
+    display: flex;
+}
+.categories ul::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0a4";
+    position: relative;
+    right: 0px;
+    top: 3px;
+    color: #858282;
+}
+.categories li {
+    color: #858282;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-between;
+    margin-left: 10px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: bold;
+}
+.categories ul li:last-child{
+    display: flex;
+    justify-content: flex-end;
+}
+.post > div {
+    display: flex;
+    margin-bottom: 12px;
+}
+.post > div img {
+    width: 100px;
+    height: 80px;
+    border-radius: 12px;
+}
+.post > div > div {
+    padding: 0px 20px;
+}
+.post > div > div p {
+    margin-top: 0;
+    font-style: italic;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+}
+.post > div > div > div {
+    display: inline;
+}
+.post > div > div > div i {
+    color: var(--red);
+    margin-left: 10px;
+}
+.post > div > div > div span {
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+.post > div > div > div:first-of-type::after {
+    content: "";
+    height: 16px;
+    border-right: 2px solid #858282;
+    margin-left: 5px;
+}
+.offer img {
+    width: 300px;
+    margin-top: 10px;
+}
+.instagram .image {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.instagram .image img {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+}
+.tags .list ul {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    width: 300px;
+    height: 120px;
+    padding: 0;
+}
+.tags .list li {
+    padding: 8px 16px;
+    background-color: #eee;
+    border-radius: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.nums {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.nums > span {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #bbb4b4;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #bbb4b4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+.nums .special {
+    background-color: var(--red);
+    border: 0;
+    color: #eee;
+}
